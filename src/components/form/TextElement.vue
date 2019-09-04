@@ -3,6 +3,6 @@
 </template>
 <script>
     export default {
-        name: "TextElement"
+        name: "text-element"
     }
 </script>

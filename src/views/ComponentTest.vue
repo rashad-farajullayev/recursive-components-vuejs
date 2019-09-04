@@ -13,7 +13,7 @@
 import ContainerElement from "@/components/form/ContainerElement.vue"
 
 export default {
-    name: "ComponentTest",
+    name: "component-test",
     components: {ContainerElement},
     data() {
         return {
@@ -29,7 +29,15 @@ export default {
                                         [
                                             {id: 9, type: "text"},
                                             {id: 10, type: "text"},
-                                            {id: 11, type: "text"},
+                                            {id: 11, type: "button"},
+                                            {id: 12, type: "table", items: 
+                                                [
+                                                    {id: 13, type: "text"},
+                                                    {id: 14, type: "button"}, 
+                                                    {id: 15, type: "button"},
+                                                    {id: 16, type: "text"},              
+                                                ]
+                                            },
                                         ]},
                 {id: 8, type: "button"}
             ]

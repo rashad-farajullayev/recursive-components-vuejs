@@ -1,24 +1,12 @@
 <template>
-        <table border="1">
-            <tr>
-                <td>
-                    <!-- <h1>THIS IS TABLE</h1> -->
-                    <container-element-place :items="items"></container-element-place>
-                </td>
-            </tr>
-        </table>
+    <div style="margin-left: 120px">
+        <container-element :items="items"></container-element>
+    </div>
 </template>
 <script>
-
-import ContainerElementPlace from "@/components/form/ContainerElement.vue"
 export default {
-    name: "TableElement",
-    components: {ContainerElementPlace},
-    props: ['items'],
-    created() {
-        console.log("Table items: ");
-        console.log(this.items);
-
-    }
+    name: "table-element",
+    components: {ContainerElement: () => import('./ContainerElement.vue')},
+    props: ['items']
 }
 </script>
